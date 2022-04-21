@@ -17,8 +17,10 @@
 package org.hyperledger.fabric.sdk;
 
 import java.util.Iterator;
+import java.util.List;
 
 import com.google.protobuf.InvalidProtocolBufferException;
+import org.hyperledger.fabric.protos.ledger.rwset.Rwset;
 import org.hyperledger.fabric.protos.ledger.rwset.Rwset.NsReadWriteSet;
 import org.hyperledger.fabric.protos.ledger.rwset.Rwset.TxReadWriteSet;
 import org.hyperledger.fabric.protos.ledger.rwset.kvrwset.KvRwset;
@@ -58,6 +60,9 @@ public class TxReadWriteSetInfo {
 
         public KvRwset.KVRWSet getRwset() throws InvalidProtocolBufferException {
             return KvRwset.KVRWSet.parseFrom(nsReadWriteSet.getRwset());
+        }
+        public List<Rwset.CollectionHashedReadWriteSet> getCollectionHashedRwsetList() {
+            return nsReadWriteSet.getCollectionHashedRwsetList();
         }
 
         public String getNamespace() {

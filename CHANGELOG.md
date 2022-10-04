@@ -1,3 +1,27 @@
+## v2.2.17
+Wed 21 Sep 2022 14:41:42 BST
+
+* [234774d](https://github.com/hyperledger/fabric-sdk-java/commit/234774d) Update dependencies to address CVE-2022-38752 (#231) (#233)
+* [d1bbf2f](https://github.com/hyperledger/fabric-sdk-java/commit/d1bbf2f) Update dependencies to support Apple silicon (M1 / arm64) (#232)
+
+## v2.2.16
+Wed  7 Sep 2022 11:10:37 BST
+
+* [446076a](https://github.com/hyperledger/fabric-sdk-java/commit/446076a) Fix CVE-2022-25857 (#224) (#225)
+
+## v2.2.15
+Thu  7 Jul 2022 13:35:21 BST
+
+* [f5cd62a](https://github.com/hyperledger/fabric-sdk-java/commit/f5cd62a) GitHub Actions build (#218)
+* [19b7291](https://github.com/hyperledger/fabric-sdk-java/commit/19b7291) Update chaincode dependencies to avoid dependabot alerts (#217)
+* [599fe3d](https://github.com/hyperledger/fabric-sdk-java/commit/599fe3d) Performance improvement for CryptoPrimitives (#214)
+* [0e4098d](https://github.com/hyperledger/fabric-sdk-java/commit/0e4098d) Disabled scehduled security vulnerability scan (#213)
+
+## v2.2.14
+Thu 12 May 2022 13:41:46 BST
+
+* [7c96d5a](https://github.com/hyperledger/fabric-sdk-java/commit/7c96d5a) Address security vulnerability CVE-2022-25647 (#199) (#200)
+
 ## v2.2.13
 Tue 29 Mar 2022 15:17:20 BST
 

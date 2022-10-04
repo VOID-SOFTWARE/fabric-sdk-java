@@ -338,7 +338,7 @@ public class LifecycleChaincodePackage {
             // Never happens with ByteArrayOutputStream
             throw new UncheckedIOException(e);
         }
-     }
+    }
 
     public JsonObject getMetaInfJson() throws IOException {
 

@@ -23,11 +23,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-import io.opentelemetry.api.OpenTelemetry;
-import io.opentelemetry.sdk.OpenTelemetrySdk;
-import io.opentelemetry.sdk.OpenTelemetrySdkBuilder;
-import io.opentelemetry.sdk.autoconfigure.AutoConfiguredOpenTelemetrySdk;
-import io.opentelemetry.sdk.trace.SdkTracerProvider;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.Level;
@@ -116,7 +112,7 @@ public class Config {
     private static Config config;
     private static final Properties sdkProperties = new Properties();
     private static final AtomicLong count = new AtomicLong(0);
-    private final OpenTelemetrySdk openTelemetry;
+
 
     //Provides a unique id for logging to identify a specific instance.
     public String getNextID() {
@@ -247,11 +243,7 @@ public class Config {
 
             }
 
-            openTelemetry = AutoConfiguredOpenTelemetrySdk
-                .builder()
-                .setResultAsGlobal(false)
-                .build()
-                .getOpenTelemetrySdk();
+
         }
 
     }
@@ -359,9 +351,7 @@ public class Config {
 
     }
 
-    public OpenTelemetry getOpenTelemetry() {
-        return openTelemetry;
-    }
+
 
     private Map<Integer, String> curveMapping = null;
 
